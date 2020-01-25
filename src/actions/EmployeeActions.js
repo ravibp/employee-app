@@ -1,12 +1,9 @@
 import * as actionKeys from "./ActionTypes";
 
 export const handleAuthentication = (username, password) => dispatch => {
-  if (username === "a" && password === "a") {
+  if (username === "hruday@gmail.com" && password === "hruday123") {
     dispatch(setAuthentication(true));
   }
-  // if (username === "hruday@gmail.com" && password === "hruday123") {
-  //   dispatch(setAuthentication(true));
-  // }
   return {
     type: actionKeys.HANDLE_AUTHENTICATION,
     username,
